@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SatrackBankSystem.Api</name>
+    </assembly>
+    <members>
+        <member name="M:SatrackBankSystem.Api.Controllers.FinancialProductsController.CreateSavingsAccount(SatrackBankSystem.Api.Application.Commands.CreateSavingsAccountCommand)">
+            <summary>
+            Crear cuenta de ahorros 
+            </summary>
+            <param name="command">Identificación del cliente</param>
+            <returns></returns>
+        </member>
+        <member name="M:SatrackBankSystem.Api.Controllers.FinancialProductsController.CreateCDTAccount(SatrackBankSystem.Api.Application.Commands.CreateCDTAccountCommand)">
+            <summary>
+            Crear cuenta CDT
+            </summary>
+            <param name="command">Valores para la creación</param>
+            <returns></returns>
+        </member>
+        <member name="M:SatrackBankSystem.Api.Controllers.FinancialProductsController.CreateCurrentAccount(SatrackBankSystem.Api.Application.Commands.CreateCurrentAccountCommand)">
+            <summary>
+            Crear cuenta corriente
+            </summary>
+            <param name="command">Valores para la creación</param>
+            <returns></returns>
+        </member>
+        <member name="M:SatrackBankSystem.Api.Controllers.FinancialProductsController.ApplyTransactionCurrent(System.Guid,SatrackBankSystem.Api.Application.Commands.ApplyTransactionCurrentCommand)">
+            <summary>
+            Permite aplicar una transacción a la cuenta corriente
+            </summary>
+            <param name="accountId">Número de cuenta</param>
+            <param name="command">Monto para aplicar la transacción</param>
+            <returns></returns>
+        </member>
+        <member name="M:SatrackBankSystem.Api.Controllers.FinancialProductsController.ApplyTransactionSavings(System.Guid,SatrackBankSystem.Api.Application.Commands.ApplyTransactionSavingsCommand)">
+            <summary>
+            Permite aplicar una transacción a la cuenta de ahorros  
+            </summary>
+            <param name="accountId">Número de cuenta</param>
+            <param name="command">Monto para aplicar la transacción</param>
+            <returns></returns>
+        </member>
+        <member name="M:SatrackBankSystem.Api.Controllers.FinancialProductsController.CancelCDT(System.Guid)">
+            <summary>
+            Permite cancelar la cuenta CDT
+            </summary>
+            <param name="accountId">Número de la cuenta CDT</param>
+            <returns></returns>
+        </member>
+        <member name="M:SatrackBankSystem.Api.Controllers.FinancialProductsController.GetInterestProjection(System.Guid,System.Int32)">
+            <summary>
+            Consultar proyección del saldo de una cuenta en el tiempo
+            </summary>
+            <param name="accountId">Número de cuenta</param>
+            <param name="months">Meses para calcular la proyección</param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientsController.CreateClient(SatrackBankSystem.Api.Application.Commands.CreateClientCommand)">
+            <summary>
+            Crear nuevo cliente
+            </summary>
+            <param name="command">Datos para la creación del cliente</param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientsController.GetAverageBalance">
+            <summary>
+            Consultar saldo promedio de tipos de clientes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClientsController.GetTopClients">
+            <summary>
+            Consultar clientes con mayor saldo según tipo cliente
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
