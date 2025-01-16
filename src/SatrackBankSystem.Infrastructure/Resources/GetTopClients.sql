@@ -17,4 +17,4 @@ SELECT
     TotalBalance
 FROM RankedClients
 WHERE RowNum <= 10
-ORDER BY ClientType, TotalBalance ASC;
+ORDER BY ClientType, TotalBalance DESC;
